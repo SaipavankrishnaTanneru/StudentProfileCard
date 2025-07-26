@@ -1,6 +1,7 @@
 import React from "react";
 
 import StudentProfilemiddle from "../../Components/Student/StudentProfileCard/StudentProfilemiddle/StudentProfilemiddle";
+import StudentInformation from "../../Components/Student/StudentProfileInformation/studentInformation/StudentInformation";
 
 const dummyStudentData = {
   studentName: "Sai",
@@ -19,6 +20,9 @@ const StudentProfileContainer = () => {
     <div
       className="StudentProfileCard" style={{paddingLeft:'5px'}}>
       <StudentProfilemiddle studentId={studentId} data={dummyStudentData} />
+      <div>
+        <StudentInformation/>
+      </div>
     </div>
   );
 };
